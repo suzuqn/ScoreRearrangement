@@ -1,7 +1,7 @@
 # Piano Score Rearrangement
 
 This is the official repository for the paper titled "Piano Score Rearrangement into Multiple Difficulty Levels via Notation-to-notation Approach" (in press),
-providing the tools for ST+, an updated version of score token representation. 
+providing the tools for ST+, an updated version of [score token representation](https://github.com/suzuqn/ScoreTransformer/). 
 
 <!--
 [Paper](https://arxiv.org/abs/2112.00355) | [Short paper](https://archives.ismir.net/ismir2021/latebreaking/000032.pdf) | [Project page](https://score-transformer.github.io/)
