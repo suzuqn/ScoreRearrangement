@@ -3,7 +3,7 @@
 This is the official repository for "Piano score rearrangement" paper (in press),  
 providing the tools for **ST+**, an **updated version** of [score token](https://github.com/suzuqn/ScoreTransformer/) representaion. 
 
-[Project page](https://score-rearrangement.github.io/)
+Paper | [Project page](https://score-rearrangement.github.io/)
 
 <!--
 [Paper](https://arxiv.org/abs/2112.00355) | [Short paper](https://archives.ismir.net/ismir2021/latebreaking/000032.pdf) | [Project page](https://score-transformer.github.io/)
