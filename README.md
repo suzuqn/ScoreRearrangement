@@ -14,7 +14,7 @@ from score_to_tokens import MusicXML_to_tokens
 tokens = MusicXML_to_tokens('input_score.musicxml', bar_major=True, tokenize_chord_symbols=True)
 ```
 
-available options for `MusicXML_to_tokens()`:
+Available options for `MusicXML_to_tokens()`:
 - `bar_major`: tokenize scores in a ***bar-major*** style (True) or ***staff-major*** style (False)
   - see Fig.3(b) in [our paper](https://link.springer.com/article/10.1186/s13636-023-00321-7)
 - `note_name`: tokenize pitches as ***note names*** (True) or ***note numbers*** (False)
@@ -33,6 +33,13 @@ s.write('musicxml', 'output_score')
 - ***bar-major*** tokens or ***staff-major*** tokens
 - a ***list*** of tokens or a space-joined sequence of tokens (i.e. ***str***)
 
+```Python
+# You can pass a list of tokens
+s = tokens_to_score(['bar', 'key_sharp_1', 'time_2/4', ...])
+
+# ... or a space-joined sequence of tokens
+s = tokens_to_score('bar key_sharp_1 time_2/4 ...')
+```
 
 ## Dependencies
 - music21
