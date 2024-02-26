@@ -18,8 +18,10 @@ Available options for `MusicXML_to_tokens()`:
 - `bar_major`: tokenize scores in a ***bar-major*** style (True) or ***staff-major*** style (False)
   - see Fig.3(b) in [our paper](https://link.springer.com/article/10.1186/s13636-023-00321-7)
 - `note_name`: tokenize pitches as ***note names*** (True) or ***note numbers*** (False)
+  - i.e., `note_C4` if True or `note_60` if False
 - `tokenize_chord_symbols`: tokenize ***chord symbols*** (True) or not (False)
-
+  - like `chord_D7 bass_A` (= D7/A)
+  
 ### Detokenization
 
 ```Python
