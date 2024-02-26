@@ -14,7 +14,7 @@ from score_to_tokens import MusicXML_to_tokens
 tokens = MusicXML_to_tokens('input_score.musicxml', bar_major=True, tokenize_chord_symbols=True)
 ```
 
-available options
+available options for `MusicXML_to_tokens()`:
 - `bar_major`: tokenize scores in a ***bar-major*** style (True) or ***staff-major*** style (False)
   - see Fig.3(b) in [our paper](https://link.springer.com/article/10.1186/s13636-023-00321-7)
 - `note_name`: tokenize pitches as ***note names*** (True) or ***note numbers*** (False)
@@ -25,7 +25,7 @@ available options
 ```Python
 from tokens_to_score import tokens_to_score
 
-s = tokens_to_score(tokens)
+s = tokens_to_score(tokens) # returns a music21.stream.Score object
 s.write('musicxml', 'output_score')
 ```
 
@@ -37,6 +37,7 @@ s.write('musicxml', 'output_score')
 ## Dependencies
 - music21
 - BeautifulSoup4
+- pretty-midi
 
 ## Citation
 If you find this repository helpful, please consider citing our paper:
